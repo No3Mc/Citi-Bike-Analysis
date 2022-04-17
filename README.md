@@ -56,22 +56,26 @@ additional changes and cleaning you need to do:
             - started_at
             - ended_at
    - The following table provides a description of each attribute in your dataset table<br>
-   (citibike-tripdata):
+      <h4>
+      (citibike-tripdata):
+      <h4>
 
-        | Attribute | Description |
-        | --- | ----------- |
-        | ride_id  | The recorded instance of the bike use, by a customer or member.|
-        | started_at  | The start date and time the bike is undocked for use by the customer/member |
-        | ended_at  | The date and time, that the bike is returned to a docking station by a customer/member. |
-        | start_station_name |  The street or location name that the biked is collected/undocked |
-        | start_station_id | The ID or reference number of the start docking station, where the bike is first collected/undocked. |
-        | end_station_name | The street or location name that the biked is returned/docked |
-        | end_station_id  | The ID or reference number of the docking station where the bike is returned/docked. |
-        | start_lat | The location latitude, where the bike is collected/undocked |
-        | start_lng  | The location longitude, where the bike is collected/undocked. |
-        | end_lat | The location latitude, where the bike is returned/docked. |
-        | end_lng  | The location longitude, where the bike is returned/docked. |
-        | customer | The person using the Citi Bike service can either be a casual customer, or a subscribed member customer. In this case: <br>• Casual = 24-hour pass or 3-day pass user;  <br>• Member = Subscribed annual member |
+
+
+  | Attribute | Description |
+  | --- | ----------- |
+  | ride_id  | The recorded instance of the bike use, by a customer or member.|
+  | started_at  | The start date and time the bike is undocked for use by the customer/member |
+  | ended_at  | The date and time, that the bike is returned to a docking station by a customer/member. |
+  | start_station_name |  The street or location name that the biked is collected/undocked |
+  | start_station_id | The ID or reference number of the start docking station, where the bike is first collected/undocked. |
+  | end_station_name | The street or location name that the biked is returned/docked |
+  | end_station_id  | The ID or reference number of the docking station where the bike is returned/docked. |
+  | start_lat | The location latitude, where the bike is collected/undocked |
+  | start_lng  | The location longitude, where the bike is collected/undocked. |
+  | end_lat | The location latitude, where the bike is returned/docked. |
+  | end_lng  | The location longitude, where the bike is returned/docked. |
+  | customer | The person using the Citi Bike service can either be a casual customer, or a subscribed member customer. In this case: <br>• Casual = 24-hour pass or 3-day pass user;  <br>• Member = Subscribed annual member |
 
 
 
