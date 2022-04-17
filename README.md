@@ -79,7 +79,7 @@ considering the following:
 `a. What are the total number of bikes collected/undocked per Station?` <br>
 
 <ol style="list-style-type:lower-roman">
-  <li>Coffee</li>
+  <li>Start_station_name or Start_station_id</li>
 </ol>
 
 `b. What are the total number of bikes returned/docked per Station?`
@@ -89,44 +89,49 @@ considering the following:
     <li>End_station_name or End_station_id </li>
 </ul>
 
-`What type of customer often uses Citi Bike`?
+`c. What type of customer often uses Citi Bike`?
     
 <ol style="list-style-type:lower-roman">
-  <li>Coffee</li>
+  <li>Customer</li>
 </ol>
 
-`What is the most common duration of bike use?`
+`d. What is the most common duration of bike use?`
 
 <ol style="list-style-type:lower-roman">
-  <li>Coffee</li>
+  <li>Started_At and Ended_At (NB: Remember these fields will be split – see part 
+2 b))</li>
 </ol>
 
-`Develop a map or two maps, showing the frequency of bike collection and return in different locations:`
+`e. Develop a map or two maps, showing the frequency of bike collection and return in different locations:`
 
 
 <ol style="list-style-type:lower-roman">
-  <li>Coffee</li>
+  <li>Start_lat and Start_lng</li>
+    <li>End_lat and End_lng
+</li>
 </ol>
 
-`Which stations do Member Customers commonly collect bikes?`
+`f. Which stations do Member Customers commonly collect bikes?`
 
 <ol style="list-style-type:lower-roman">
-  <li>Coffee</li>
+  <li>Customer, Start_station_name</li>
 </ol>
 
-`Which stations do Casual Customers commonly collect bikes`
+`g. Which stations do Casual Customers commonly collect bikes`
 
 <ol style="list-style-type:lower-roman">
-  <li>Coffee</li>
+  <li>Customer, Start_station_name
+</li>
 </ol>
 
-`At what time of the day (group in Morning, Afternoon, and Evening) do Member Customers commonly return or dock bikes they have used?`
+`h. At what time of the day (group in Morning, Afternoon, and Evening) do Member Customers commonly return or dock bikes they have used?`
 
 <ol style="list-style-type:lower-roman">
-  <li>Coffee</li>
+  <li>Customer, Ended_at</li>
 </ol>
 
-    
+`i. Add ONE (1) additional analysis that may provide insight for decision-making.`
+
 
 
 
