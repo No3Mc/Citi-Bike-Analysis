@@ -33,6 +33,7 @@ the data they have collected on Citi Bike use. Visit the following page to learn
 </h1>
 
 <b>1. Access CitiBike data CSV file available for download from [HERE](https://vle.dmu.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_5672247_1&course_id=_601352_1)</b>
+
 <b>2. Explore the data: </b>
 
    -  Have a look at the CitiBike data in your main table ‘citibike-tripdata’ to 
