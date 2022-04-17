@@ -1,0 +1,8 @@
+@counter-style novowels {
+    system: fixed;
+    symbols: B C D F G H J K L M N P Q R S T V W X Z;
+    suffix: " ";
+  }
+  .consonants > li {
+    list-style: novowels;
+  }
