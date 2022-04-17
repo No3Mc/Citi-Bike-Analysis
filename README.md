@@ -228,270 +228,70 @@ reports: <b>
 
 
   <tr>
-  <td>Data Access
-and Exploration 
-in SAS</td>
+  <td>Data Access and Exploration in SAS</td>
   <td>20% </td>
-  <td>Very 
-weak or 
-no 
-attempt 
-of any 
-merit</td>
-  <td>An attempt 
-at ETL, but 
-weak and 
-lacking in 
-effort.</td>
-  <td>Some 
-effort to 
-use ETL 
-evident, 
-but weak 
-overall.</td>
-  <td>ETL used to 
-a basic level, 
-but with 
-gaps/omissio
-ns/weakness
-es.</td>
-  <td>Generally 
-sound ETL 
-methods/code
-but some 
-weaknesses. </td>
-  <td>Good use of 
-ETL, 
-significant 
-effort, no 
-major 
-weaknesses.
-Some 
-evidence of 
-data 
-validation/for
-matting.</td>
-  <td>Excellent use 
-of ETL, 
-significant 
-effort, very few 
-weaknesses 
-overall, basic 
-validation/form
-atting present.
+  <td>Very weak or no attempt of any merit</td>
+  <td>An attempt at ETL, but weak and lacking in effort.</td>
+  <td>Some effort to use ETL evident, but weak overall.</td>
+  <td>ETL used to a basic level, but with gaps/omissions/weaknesses.</td>
+  <td>Generally sound ETL methods/codebut some weaknesses. </td>
+  <td>Good use of ETL, significant effort, no major weaknesses.Some evidence of data validation/formatting.</td>
+  <td>Excellent use of ETL, significant effort, very few weaknesses overall, basic validation/formatting present.
 </td>
-  <td>Outstanding use of 
-ETL, with significant 
-effort, very high 
-standards and no 
-weaknesses 
-evident, basic 
-validation/formatting
-present.</td>
-  <td>Exceptional use of 
-ETL, with highest 
-levels of effort, 
-standards and 
-with no 
-weaknesses 
-evident. Data 
-sources accessed
-with complete 
-validation/formatti
-ng present.
+  <td>Outstanding use of ETL, with significant effort, very high standards and no weaknesses evident, basic validation/formattingpresent.</td>
+  <td>Exceptional use of ETL, with highest levels of effort, standards and with no weaknesses evident. Data sources accessedwith complete validation/formatting present.
 </td>
   </tr>
 
 
 
   <tr>
-  <td>Data Analysis in 
-SAS</td>
+  <td>Data Analysis in SAS</td>
   <td>30%</td>
-  <td>Very 
-weak or 
-no 
-attempt 
-of any 
-merit</td>
-  <td>An attempt, 
-but weak 
-and lacking 
-in effort or 
-analysis</td>
-  <td>Some 
-effort 
-evident, 
-but weak 
-analysis 
-overall</td>
-  <td>A basic but 
-useable 
-analysis, but 
-with 
-gaps/omissio
-ns/weakness
-es</td>
-  <td>Generally 
-sound 
-analysis 
-evident, but 
-some 
-weaknesses
+  <td>Very weak or no attempt of any merit</td>
+  <td>An attempt, but weak and lacking in effort or analysis</td>
+  <td>Some effort evident, but weak analysis overall</td>
+  <td>A basic but useable analysis, but with gaps/omissions/weaknesses</td>
+  <td>Generally sound analysis evident, but some weaknesses
 </td>
-  <td>Good 
-analysis and 
-graphs, 
-significant 
-effort, no 
-major 
-weaknesses</td>
-  <td>Excellent 
-analysis and 
-graphs, 
-significant 
-effort, very few 
-weaknesses 
-overall </td>
-  <td>Outstanding 
-analysis and graphs, 
-with significant 
-effort, very high 
-standards and no 
-weaknesses evident</td>
-  <td>Exceptional work, 
-with highest levels 
-of effort, 
-standards and 
-with no 
-weaknesses 
-evident </td>
+  <td>Good analysis and graphs, significant effort, no major weaknesses</td>
+  <td>Excellent analysis and graphs, significant effort, very few weaknesses overall </td>
+  <td>Outstanding analysis and graphs, with significant effort, very high standards and no weaknesses evident</td>
+  <td>Exceptional work, with highest levels of effort, standards and with no weaknesses evident </td>
   </tr>
 
 
 
   <tr>
-  <td>Dashboard
-Design</td>
+  <td>DashboardDesign</td>
   <td>30% </td>
-  <td>Very 
-weak or 
-no 
-attempt 
-of any 
-merit</td>
-  <td>An attempt, 
-but weak 
-and lacking 
-in effort or 
-design</td>
-  <td>Some 
-effort 
-evident, 
-but weak 
-design 
-overall</td>
-  <td>A basic but 
-useable 
-dashboard, 
-but with 
-gaps/omissio
-ns/weakness
-es</td>
-  <td>Generally 
-sound 
-dashboard, 
-but some 
-weaknesses
+  <td>Very weak or no attempt of any merit</td>
+  <td>An attempt, but weak and lacking in effort or design</td>
+  <td>Some effort evident, but weak design overall</td>
+  <td>A basic but useable dashboard, but with gaps/omissions/weaknesses</td>
+  <td>Generally sound dashboard, but some weaknesses
 </td>
-  <td>Good 
-dashboard
-design, 
-significant 
-effort, no 
-major 
-weaknesses</td>
-  <td>Excellent 
-dashboard
-design, 
-significant 
-effort, very few 
-weaknesses 
-overal</td>
-  <td>Outstanding 
-dashboard design, 
-with significant 
-effort, very high 
-standards and no 
-weaknesses evident</td>
-  <td>Exceptional work, 
-with highest levels 
-of effort, 
-standards and 
-with no 
-weaknesses 
-evident</td>
+  <td>Good dashboarddesign, significant effort, no major weaknesses</td>
+  <td>Excellent dashboarddesign, significant effort, very few weaknesses overal</td>
+  <td>Outstanding dashboard design, with significant effort, very high standards and no weaknesses evident</td>
+  <td>Exceptional work, with highest levels of effort, standards and with no weaknesses evident</td>
   </tr>
 
 
 
   <tr>
-  <td>Individual 
-Reflective 
-Report</td>
+  <td>Individual Reflective Report</td>
   <td>20% </td>
-  <td>Very 
-weak or 
-no 
-attempt 
-of any 
-merit</td>
-  <td>An attempt, 
-but weak 
-and lacking 
-in effort. 
-Barely any 
-work.</td>
-  <td>Some 
-effort 
-evident, 
-but weak 
-overall. </td>
-  <td>Sufficient 
-and basic 
-work, but 
-with 
-gaps/omissio
-ns/weakness
-es.
+  <td>Very weak or no attempt of any merit</td>
+  <td>An attempt, but weak and lacking in effort. Barely any work.</td>
+  <td>Some effort evident, but weak overall. </td>
+  <td>Sufficient and basic work, but with gaps/omissions/weaknesses.</td>
+  <td>Generally sound, but some weaknesses
 </td>
-  <td>Generally 
-sound, but 
-some 
-weaknesses
-</td>
-  <td>Good work, 
-significant 
-effort, no 
-major 
-weaknesses</td>
-  <td>Excellent work, 
-significant 
-effort, very few 
-weaknesses 
-overall</td>
-  <td>Outstanding work, 
-with significant 
-effort, very high 
-standards and no 
-weaknesses evident</td>
-  <td>Exceptional work, 
-with highest levels 
-of effort, 
-standards and 
-with no 
-weaknesses 
-evident</td>
+  <td>Good work, significant effort, no major weaknesses</td>
+  <td>Excellent work, significant effort, very few weaknesses overall</td>
+  <td>Outstanding work, with significant effort, very high standards and no weaknesses evident</td>
+  <td>Exceptional work, with highest levels of effort, standards and with no weaknesses evident</td>
   </tr>
 
 
@@ -499,55 +299,16 @@ evident</td>
   <tr>
   <td>OVERALL</td>
   <td>100%</td>
-  <td>Very 
-weak or 
-no 
-attempt 
-of any 
-merit</td>
-  <td>An attempt, 
-but weak 
-and lacking 
-in effort</td>
-  <td>Some 
-effort 
-evident, 
-but weak 
-overall</td>
-  <td>Sufficient 
-and basic 
-work, but 
-with 
-gaps/omissio
-ns/weakness
-es</td>
-  <td>Generally 
-sound, but 
-some 
-weaknesses
+  <td>Very weak or no attempt of any merit</td>
+  <td>An attempt, but weak and lacking in effort</td>
+  <td>Some effort evident, but weak overall</td>
+  <td>Sufficient and basic work, but with gaps/omissions/weaknesses</td>
+  <td>Generally sound, but some weaknesses
 </td>
-  <td>Good work, 
-significant 
-effort, no 
-major 
-weaknesses</td>
-  <td>Excellent work, 
-significant 
-effort, very few 
-weaknesses 
-overal</td>
-  <td>Outstanding work, 
-with significant 
-effort, very high 
-standards and no 
-weaknesses evident</td>
-  <td>Exceptional work, 
-with highest levels 
-of effort, 
-standards and 
-with no 
-weaknesses 
-evident</td>
+  <td>Good work, significant effort, no major weaknesses</td>
+  <td>Excellent work, significant effort, very few weaknesses overal</td>
+  <td>Outstanding work, with significant effort, very high standards and no weaknesses evident</td>
+  <td>Exceptional work, with highest levels of effort, standards and with no weaknesses evident</td>
   </tr>
 
 
