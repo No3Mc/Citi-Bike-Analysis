@@ -4,11 +4,11 @@
 
 
 Analysing Citi Bike
-
+<h1>
 <p align="center"><b>IMAT2214 Business Intelligence (BI)</b>
 
 <p align="center"> Summative Assessment Task 2
-
+</h1>
 <p align="center">Practical Development & Individual Report (50% of module coursework mark)
   
 <p align="right">
@@ -31,8 +31,9 @@ Data Analyst, you have been asked to demonstrate how SAS Studio can be used to g
 the data they have collected on Citi Bike use. Visit the following page to learn more about Citi Bike: 
 
 - https://www.citibikenyc.com/about
-
+<h1>
 <b>Use the following guidelines to apply SAS studio:</b>
+</h1>
 
 <b>1. Access CitiBike data CSV file available for download from [HERE](https://vle.dmu.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_5672247_1&course_id=_601352_1)</b>
 <b>2. Explore the data: </b>
@@ -198,7 +199,7 @@ reports: <b>
 
 
 
-
+<h1>Marking Grid</h1>
 
 
 <table>
