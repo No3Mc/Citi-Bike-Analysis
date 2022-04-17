@@ -1,8 +1,94 @@
-@counter-style novowels {
+@counter-style aNov {
     system: fixed;
-    symbols: B C D F G H J K L M N P Q R S T V W X Z;
+    symbols: a;
     suffix: " ";
   }
-  .consonants > li {
-    list-style: novowels;
+  @counter-style bNov {
+    system: fixed;
+    symbols: b;
+    suffix: " ";
   }
+  @counter-style cNov {
+    system: fixed;
+    symbols: c;
+    suffix: " ";
+  }
+  @counter-style dNov {
+    system: fixed;
+    symbols: d;
+    suffix: " ";
+  }
+  @counter-style eNov {
+    system: fixed;
+    symbols: e;
+    suffix: " ";
+  }
+  @counter-style fNov {
+    system: fixed;
+    symbols: f;
+    suffix: " ";
+  }
+  @counter-style gNov {
+    system: fixed;
+    symbols: g;
+    suffix: " ";
+  }  @counter-style hNov {
+    system: fixed;
+    symbols: h;
+    suffix: " ";
+  }  @counter-style iNov {
+    system: fixed;
+    symbols: i;
+    suffix: " ";
+  }  @counter-style jNov {
+    system: fixed;
+    symbols: j;
+    suffix: " ";
+  }
+
+
+
+
+
+
+  .aLi > li {
+    list-style: aNov;
+  }
+
+  .bLi > li {
+    list-style: bNov;
+  }
+
+  .cLi > li {
+    list-style: cNov;
+  }
+
+  .dLi > li {
+    list-style: dNov;
+  }
+
+  .eLi > li {
+    list-style: eNov;
+  }
+
+  .fLi > li {
+    list-style: fNov;
+  }
+
+  .gLi > li {
+    list-style: gNov;
+  }
+
+  .hLi > li {
+    list-style: hNov;
+  }
+
+  .iLi > li {
+    list-style: iNov;
+  }
+
+  .jLi > li {
+    list-style: jNov;
+  }
+
+  

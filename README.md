@@ -1,6 +1,6 @@
   <link rel="stylesheet" href="Readme.css">
 
-# -Citi-Bike-Analysis
+# Citi-Bike-Analysis
 
 
 Analysing Citi Bike
@@ -75,10 +75,60 @@ additional changes and cleaning you need to do:
 3. Analyse the data and develop reports and graphical charts that would be useful to Citi Bike, 
 considering the following:
 
+ `a. What are the total number of bikes collected/undocked per Station?` <br>
+
+<ol style="list-style-type:lower-roman">
+  <li>Coffee</li>
+</ol>
+
+    b. What are the total number of bikes returned/docked per Station?
 
 
-<ol type="consonants">
-<li>start</li>
+<ul>
+    <li>End_station_name or End_station_id </li>
+</ul>
+
+
+    c. What type of customer often uses Citi Bike?
+    
+<ol style="list-style-type:lower-roman">
+  <li>Coffee</li>
+</ol>
+
+    d. What is the most common duration of bike use?
+
+<ol style="list-style-type:lower-roman">
+  <li>Coffee</li>
+</ol>
+
+    e. Develop a map or two maps, showing the frequency of bike collection and return in 
+    different locations:
+
+
+<ol style="list-style-type:lower-roman">
+  <li>Coffee</li>
+</ol>
+
+    f. Which stations do Member Customers commonly collect bikes?
+
+<ol style="list-style-type:lower-roman">
+  <li>Coffee</li>
+</ol>
+
+    g. Which stations do Casual Customers commonly collect bikes
+
+<ol style="list-style-type:lower-roman">
+  <li>Coffee</li>
+</ol>
+
+    h. At what time of the day (group in Morning, Afternoon, and Evening) do Member
+    Customers commonly return or dock bikes they have used?
+
+<ol style="list-style-type:lower-roman">
+  <li>Coffee</li>
+</ol>
+
+    
 
 
 
