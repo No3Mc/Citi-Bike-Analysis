@@ -1,9 +1,6 @@
   <link rel="stylesheet" href="Readme.css">
 
-# Citi-Bike-Analysis
 
-
-Analysing Citi Bike
 <h1>
 <p align="center"><b>IMAT2214 Business Intelligence (BI)</b>
 
