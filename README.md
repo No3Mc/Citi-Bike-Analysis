@@ -32,7 +32,7 @@ the data they have collected on Citi Bike use. Visit the following page to learn
 
 - https://www.citibikenyc.com/about
 
-Use the following guidelines to apply SAS studio:
+<b>Use the following guidelines to apply SAS studio:</b>
 
 <b>1. Access CitiBike data CSV file available for download from [HERE](https://vle.dmu.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_5672247_1&course_id=_601352_1)</b>
 <b>2. Explore the data: </b>
@@ -135,10 +135,7 @@ considering the following:</b>
 
 `i. Add ONE (1) additional analysis that may provide insight for decision-making.`
 
-<br><br><br><br><br><br>
-
-
-
+<br>
 
 <b>4. Design a Dashboard using MS Visio [NB: this is only a sketch):</b>
 <ol type="a">
@@ -164,13 +161,7 @@ o An Individual report (500 words) submitted to TurnItIn by the date specified.
 using the Citi Bike data.
 
 
-
 <br>
-
-
-
-
-
 
 
 <b> Undergraduate Mark descriptors to guide tutor evaluations in written 
@@ -190,3 +181,377 @@ reports: <b>
 | 0-9%  | • Overall insufficient response to the assessment criteria<br>• Displays virtually no knowledge and/or other skills appropriate to the task<br>• Work is inappropriate to assessment task given |
 
 
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<table>
+
+  <tr>
+  <th>Criterion</th>
+  <th>Weight</th>
+  <th>0-19</th>
+  <th>20-29</th>
+  <th>30-39</th>
+  <th>40-49</th>
+  <th>50-59</th>
+  <th>60-69</th>
+  <th>70-79</th>
+  <th>80-89</th>
+  <th>90-100</th>
+  </tr>
+
+
+
+
+
+
+
+
+
+
+
+  <tr>
+  <td>Data Access
+and Exploration 
+in SAS</td>
+  <td>20% </td>
+  <td>Very 
+weak or 
+no 
+attempt 
+of any 
+merit</td>
+  <td>An attempt 
+at ETL, but 
+weak and 
+lacking in 
+effort.</td>
+  <td>Some 
+effort to 
+use ETL 
+evident, 
+but weak 
+overall.</td>
+  <td>ETL used to 
+a basic level, 
+but with 
+gaps/omissio
+ns/weakness
+es.</td>
+  <td>Generally 
+sound ETL 
+methods/code
+but some 
+weaknesses. </td>
+  <td>Good use of 
+ETL, 
+significant 
+effort, no 
+major 
+weaknesses.
+Some 
+evidence of 
+data 
+validation/for
+matting.</td>
+  <td>Excellent use 
+of ETL, 
+significant 
+effort, very few 
+weaknesses 
+overall, basic 
+validation/form
+atting present.
+</td>
+  <td>Outstanding use of 
+ETL, with significant 
+effort, very high 
+standards and no 
+weaknesses 
+evident, basic 
+validation/formatting
+present.</td>
+  <td>Exceptional use of 
+ETL, with highest 
+levels of effort, 
+standards and 
+with no 
+weaknesses 
+evident. Data 
+sources accessed
+with complete 
+validation/formatti
+ng present.
+</td>
+  </tr>
+
+
+
+  <tr>
+  <td>Data Analysis in 
+SAS</td>
+  <td>30%</td>
+  <td>Very 
+weak or 
+no 
+attempt 
+of any 
+merit</td>
+  <td>An attempt, 
+but weak 
+and lacking 
+in effort or 
+analysis</td>
+  <td>Some 
+effort 
+evident, 
+but weak 
+analysis 
+overall</td>
+  <td>A basic but 
+useable 
+analysis, but 
+with 
+gaps/omissio
+ns/weakness
+es</td>
+  <td>Generally 
+sound 
+analysis 
+evident, but 
+some 
+weaknesses
+</td>
+  <td>Good 
+analysis and 
+graphs, 
+significant 
+effort, no 
+major 
+weaknesses</td>
+  <td>Excellent 
+analysis and 
+graphs, 
+significant 
+effort, very few 
+weaknesses 
+overall </td>
+  <td>Outstanding 
+analysis and graphs, 
+with significant 
+effort, very high 
+standards and no 
+weaknesses evident</td>
+  <td>Exceptional work, 
+with highest levels 
+of effort, 
+standards and 
+with no 
+weaknesses 
+evident </td>
+  </tr>
+
+
+
+  <tr>
+  <td>Dashboard
+Design</td>
+  <td>30% </td>
+  <td>Very 
+weak or 
+no 
+attempt 
+of any 
+merit</td>
+  <td>An attempt, 
+but weak 
+and lacking 
+in effort or 
+design</td>
+  <td>Some 
+effort 
+evident, 
+but weak 
+design 
+overall</td>
+  <td>A basic but 
+useable 
+dashboard, 
+but with 
+gaps/omissio
+ns/weakness
+es</td>
+  <td>Generally 
+sound 
+dashboard, 
+but some 
+weaknesses
+</td>
+  <td>Good 
+dashboard
+design, 
+significant 
+effort, no 
+major 
+weaknesses</td>
+  <td>Excellent 
+dashboard
+design, 
+significant 
+effort, very few 
+weaknesses 
+overal</td>
+  <td>Outstanding 
+dashboard design, 
+with significant 
+effort, very high 
+standards and no 
+weaknesses evident</td>
+  <td>Exceptional work, 
+with highest levels 
+of effort, 
+standards and 
+with no 
+weaknesses 
+evident</td>
+  </tr>
+
+
+
+  <tr>
+  <td>Individual 
+Reflective 
+Report</td>
+  <td>20% </td>
+  <td>Very 
+weak or 
+no 
+attempt 
+of any 
+merit</td>
+  <td>An attempt, 
+but weak 
+and lacking 
+in effort. 
+Barely any 
+work.</td>
+  <td>Some 
+effort 
+evident, 
+but weak 
+overall. </td>
+  <td>Sufficient 
+and basic 
+work, but 
+with 
+gaps/omissio
+ns/weakness
+es.
+</td>
+  <td>Generally 
+sound, but 
+some 
+weaknesses
+</td>
+  <td>Good work, 
+significant 
+effort, no 
+major 
+weaknesses</td>
+  <td>Excellent work, 
+significant 
+effort, very few 
+weaknesses 
+overall</td>
+  <td>Outstanding work, 
+with significant 
+effort, very high 
+standards and no 
+weaknesses evident</td>
+  <td>Exceptional work, 
+with highest levels 
+of effort, 
+standards and 
+with no 
+weaknesses 
+evident</td>
+  </tr>
+
+
+
+  <tr>
+  <td>OVERALL</td>
+  <td>100%</td>
+  <td>Very 
+weak or 
+no 
+attempt 
+of any 
+merit</td>
+  <td>An attempt, 
+but weak 
+and lacking 
+in effort</td>
+  <td>Some 
+effort 
+evident, 
+but weak 
+overall</td>
+  <td>Sufficient 
+and basic 
+work, but 
+with 
+gaps/omissio
+ns/weakness
+es</td>
+  <td>Generally 
+sound, but 
+some 
+weaknesses
+</td>
+  <td>Good work, 
+significant 
+effort, no 
+major 
+weaknesses</td>
+  <td>Excellent work, 
+significant 
+effort, very few 
+weaknesses 
+overal</td>
+  <td>Outstanding work, 
+with significant 
+effort, very high 
+standards and no 
+weaknesses evident</td>
+  <td>Exceptional work, 
+with highest levels 
+of effort, 
+standards and 
+with no 
+weaknesses 
+evident</td>
+  </tr>
+
+
+
+
+
+</table>
