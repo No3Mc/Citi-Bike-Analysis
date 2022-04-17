@@ -34,8 +34,8 @@ the data they have collected on Citi Bike use. Visit the following page to learn
 
 Use the following guidelines to apply SAS studio:
 
-1. Access CitiBike data CSV file available for download from [HERE](https://vle.dmu.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_5672247_1&course_id=_601352_1)
-2. Explore the data: 
+<b>1. Access CitiBike data CSV file available for download from [HERE](https://vle.dmu.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_5672247_1&course_id=_601352_1)</b>
+<b>2. Explore the data: </b>
 
    -  Have a look at the CitiBike data in your main table ‘citibike-tripdata’ to 
 understand the kind of data you will be dealing with.
@@ -72,9 +72,12 @@ additional changes and cleaning you need to do:
         | end_lng  | The location longitude, where the bike is returned/docked. |
         | customer | The person using the Citi Bike service can either be a casual customer, or a subscribed member customer. In this case: <br>• Casual = 24-hour pass or 3-day pass user;  <br>• Member = Subscribed annual member |
 
-3. Analyse the data and develop reports and graphical charts that would be useful to Citi Bike, 
-considering the following:
 
+
+
+<b>3. Analyse the data and develop reports and graphical charts that would be useful to Citi Bike, 
+considering the following:</b>
+<br>
 
 `a. What are the total number of bikes collected/undocked per Station?` <br>
 
@@ -132,7 +135,58 @@ considering the following:
 
 `i. Add ONE (1) additional analysis that may provide insight for decision-making.`
 
+<br><br><br><br><br><br>
 
 
+
+
+<b>4. Design a Dashboard using MS Visio [NB: this is only a sketch):</b>
+<ol type="a">
+  <li>Using MS Visio or MS Powerpoint as a sketching tool, design a dashboard with images 
+of charts and report summaries you developed in Step 3 above.</li>
+  <li>Apply the principles of good dashboard design for business intelligence applications.
+Access the videos on Linkedin Learning    
+<a href="https://www.linkedin.com/learning-login/share?account=68130314&forceAccount=true&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fcollections%2F6782598689094438912%3Ftrk%3Dshare_collection_url%26shareId%3D6k8%252FQ7t9TFSXTCdQPPKhZQ%253D%253D">HERE</a>
+ , for guidance.</li>
+</ol>
+
+<b>5. Write an individual report (500 words):</b> Submit a reflective report justifying your design 
+decisions for the ETL and dashboard that you developed. This should be no more than 500 
+words. This is an academic piece and <u>references are expected.</u>
+
+<b> Deliverable Checklist: </b>
+1. In a document:
+o A print out of your SAS Studio code
+o Print out of all graphs/charts that are proposed to provide insight to Citi Bike.
+o A sketched design of your dashboard
+o An Individual report (500 words) submitted to TurnItIn by the date specified.
+2. A short 3-5 minute video, explaining your code, and running key elements of your SAS program 
+using the Citi Bike data.
+
+
+
+<br>
+
+
+
+
+
+
+
+<b> Undergraduate Mark descriptors to guide tutor evaluations in written 
+reports: <b>
+
+| Attribute | Description |
+| --- | ----------- |
+| 90-100% | Responds to all of the assessment criteria for the task <br>• Displays exceptional degree of originality <br>• Exceptional analytical, problem-solving and/or creative skills <br>• No fault can be found with the work other than very minor errors, for example minor typographical issues |
+| 80-89%  | • Responds to all of the assessment criteria for the task<br>• Work of outstanding quality, evidenced by an ability to engage critically and analytically with source material<br>• Likely to exhibit independent lines of argument• Highly original and/or creative responses<br>• Extremely wide range of relevant sources used where appropriate|
+| 70-79% |• Responds to all of the assessment criteria for the task<br>• An extremely well developed response showing clear knowledge and the ability to interpret and/or apply that knowledge<br>• An authoritative grasp of the subject, significant originality and insight,<br>• Significant evidence of ability to sustain an argument, to think analytically, critically and/or creatively and to synthesise material• Evidence of extensive study, appropriate to task |
+| 60-69%  | • Responds to most of the assessment criteria for the task<br>• A detailed response demonstrating a thorough grasp of theory, understanding of concepts, principles, methodology and content<br>• Clear evidence of insight and critical judgement in selecting, ordering and analysing content<br>• Demonstrates ability to synthesise material, to construct responses and demonstrate creative skills which reveal insight and may offer some originality<br>• Draws on an appropriate range of properly referenced sources |
+| 50-59%  | • Responds to most of the assessment criteria for the task<br>• An effective response demonstrating evidence of a clear grasp of relevant material, principles and key concepts<br>• An ability to construct and organise arguments• Some degree of critical analysis, insight and creativity<br>• Demonstrating some conceptual ability, critical analysis and a degree of insight<br>• Accurate, clearly written/presented |
+| 40-49%  | • Responds to some of the assessment criteria for the task<br>• A response demonstrating an understanding of basic points and principles sufficient to show that some of learning outcomes/assessment criteria have been achieved at a basic level<br>• Suitably organised work demonstrating a reasonable level of understanding<br>• Covers the basic subject matter and is appropriately presented but is rather too derivative and insufficiently analytical<br>• Demonstrates limited conceptual ability, levels of evaluation and demonstration of creativeskills<br>• Demonstrates adherence to the referencing conventions appropriate to the subject and/ortask |
+| 30-39%  | • Overall insufficient response to the assessment criteria<br>• A weak response, which, while addressing some elements of the task, contains significant gaps and inaccuracies<br>• Indicates an answer that shows only weakly developed elements of understanding and/or other skills appropriate to the task<br>• May contain weaknesses in presentation that constitute a significant obstacle in communicating meaning to the assessor |
+| 20-29%  | • Overall insufficient response to the assessment criteria<br>• A poor response, which falls substantially short of achieving the learning outcomes• Demonstrates little knowledge and/or other skills appropriate to the task<br>• Little evidence of argument and/or coherent use of material |
+| 10-19%  | • Overall insufficient response to the assessment criteria<br>• A very poor response demonstrating few relevant facts<br>• Displays only isolated or no knowledge and/or other skills appropriate to the task•<br> Little adherence to the task |
+| 0-9%  | • Overall insufficient response to the assessment criteria<br>• Displays virtually no knowledge and/or other skills appropriate to the task<br>• Work is inappropriate to assessment task given |
 
 
