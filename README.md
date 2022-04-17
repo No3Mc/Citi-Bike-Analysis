@@ -77,38 +77,52 @@ additional changes and cleaning you need to do:
 
 
 
-
+<h4>
 <b>3. Analyse the data and develop reports and graphical charts that would be useful to Citi Bike, 
 considering the following:</b>
+</h4>
+
 <br>
 
-`a. What are the total number of bikes collected/undocked per Station?` <br>
+
+<h5>a. </h5>
+
+`What are the total number of bikes collected/undocked per Station?` <br>
+
 
 <ol style="list-style-type:lower-roman">
   <li>Start_station_name or Start_station_id</li>
 </ol>
 
-`b. What are the total number of bikes returned/docked per Station?`
+<h5>b. </h5>
+
+`What are the total number of bikes returned/docked per Station?`
 
 
 <ul>
     <li>End_station_name or End_station_id </li>
 </ul>
 
-`c. What type of customer often uses Citi Bike`?
+<h5>c. </h5>
+
+`What type of customer often uses Citi Bike`?
     
 <ol style="list-style-type:lower-roman">
   <li>Customer</li>
 </ol>
 
-`d. What is the most common duration of bike use?`
+<h5>d. </h5>
+
+`What is the most common duration of bike use?`
 
 <ol style="list-style-type:lower-roman">
   <li>Started_At and Ended_At (NB: Remember these fields will be split – see part 
 2 b))</li>
 </ol>
 
-`e. Develop a map or two maps, showing the frequency of bike collection and return in different locations:`
+<h5>e. </h5>
+
+`Develop a map or two maps, showing the frequency of bike collection and return in different locations:`
 
 
 <ol style="list-style-type:lower-roman">
@@ -117,26 +131,34 @@ considering the following:</b>
 </li>
 </ol>
 
-`f. Which stations do Member Customers commonly collect bikes?`
+<h5>f. </h5>
+
+`Which stations do Member Customers commonly collect bikes?`
 
 <ol style="list-style-type:lower-roman">
   <li>Customer, Start_station_name</li>
 </ol>
 
-`g. Which stations do Casual Customers commonly collect bikes`
+<h5>g. </h5>
+
+`Which stations do Casual Customers commonly collect bikes`
 
 <ol style="list-style-type:lower-roman">
   <li>Customer, Start_station_name
 </li>
 </ol>
 
-`h. At what time of the day (group in Morning, Afternoon, and Evening) do Member Customers commonly return or dock bikes they have used?`
+<h5>h. </h5>
+
+`At what time of the day (group in Morning, Afternoon, and Evening) do Member Customers commonly return or dock bikes they have used?`
 
 <ol style="list-style-type:lower-roman">
   <li>Customer, Ended_at</li>
 </ol>
 
-`i. Add ONE (1) additional analysis that may provide insight for decision-making.`
+<h5>i. </h5>
+
+`Add ONE (1) additional analysis that may provide insight for decision-making.`
 
 <br>
 
