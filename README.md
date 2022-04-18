@@ -24,7 +24,7 @@
 <h4>
 
 &nbsp;&nbsp;&nbsp; [3. Analyse the data](https://github.com/No3Mc/Citi-Bike-Analysis/wiki#3-----------------------------------------------------------------------------------------------------------------------------------------) <br>
-<h4>
+</h4>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [a. What are the total number of bikes collected/undocked per Station?](https://github.com/No3Mc/Citi-Bike-Analysis/wiki#a-)  <br>
 
