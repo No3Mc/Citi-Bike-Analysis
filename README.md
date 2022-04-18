@@ -15,7 +15,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [b. cleaning you need to do:](https://github.com/No3Mc/Citi-Bike-Analysis/wiki#-2)  <br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [i. [delete from] and [where]](https://github.com/No3Mc/Citi-Bike-Analysis/wiki#-3)  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [i. [delete from] and [where]](https://github.com/No3Mc/Citi-Bike-Analysis/wiki#-i-some-bikes-were-not-returned-by-customers-this-is-represented-by-empty-or-incorrectly-inputted-data-under-the-end_station_name-and-end_station_id-columns-you-will-need-to-removeexclude-these-from-your-dataset-using-sas-studio-code-hint-use-a-sql-procedure-proc-sql-with-delete-from-and-where-statements--)  <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ii. [datepart] and [timepart]](https://github.com/No3Mc/Citi-Bike-Analysis/wiki#-ii-you-will-need-to-split-the-following-columns-into-date-and-time-and-reformat-the-date-hint-consider-datepart-and-timepart-functions)  <br>
 
