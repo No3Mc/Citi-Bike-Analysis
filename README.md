@@ -1,3 +1,5 @@
+# Breif
+
 <h3>
 
 [Guidelines](https://github.com/No3Mc/Citi-Bike-Analysis/wiki#use-the-following-guidelines-to-apply-sas-studio) <br>
@@ -60,3 +62,15 @@
 
 [Marking Grid](https://github.com/No3Mc/Citi-Bike-Analysis/wiki#marking-grid) <br>
 </h4>
+
+
+
+---
+
+# Progress Done
+
+1.  Accessing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | ✔️ 
+2.  Exploring Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | ❌
+3.  Analysing Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | ❌
+4.  Dashboard MS Visio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | ❌
+5.  Create 500 Words Report &nbsp;&nbsp;&nbsp;&nbsp; | ❌
