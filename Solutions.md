@@ -50,11 +50,6 @@ run;
 # 3
 ## a
 
-    /* proc freq data=work.citibike order=freq nlevels; */
-    /*  tables start_station_name / nocum; */
-    /*  format started_at monname.; */
-    /* run; */
-
     proc freq data=work.citibike order=freq;
     tables start_station_name / 
         plots=freqplot(twoway=stacked orient=horizontal);
@@ -63,13 +58,8 @@ run;
 
 ## b
 
-    /* proc freq data=work.citibike order=freq; */
-    /*  tables end_station_name / nocum; */
-    /*  format ended_at monname.;  */
-    /* run; */
-
     proc freq data=work.citibike order=freq;
-    tables end_station_name / 
+    tables start_station_name / 
         plots=freqplot(twoway=stacked orient=horizontal);
     run;
 
@@ -77,29 +67,19 @@ run;
 ## c
 
 
-    /* Proc freq data = work.citibike; */
-    /*  Tables member_casual; */
-    /* Run; */
-
     proc freq data=work.citibike order=freq;
     tables member_casual / 
-        plots=freqplot(twoway=stacked orient=horizontal);
+        plots=freqplot(twoway=stacked orient=vertical);
     run;
 
 
 
 ## d
 
-
-
     data work.citibiketime; 
     set work.citibike; 
     DurationMin = intck('minute',starttime,endtime); 
     run;
-
-    /* Proc freq data = work.citibiketime ORDER=freq; */
-    /*  Tables DurationMin; */
-    /* Run; */
 
     proc freq data=work.citibiketime order=freq;
     tables DurationMin / 
@@ -108,20 +88,35 @@ run;
 
 
 ## e
-    Working on
+
+    proc sgplot data=work.citibike;
+    scatter x=start_lat y=start_lng;
+    run;
+
+    pattern c=black v=e r=62;
+    proc gmap
+    data=maps.counties 
+    map=maps.counties;
+    id county;
+    choro county / nolegend;
+    where state eq 36;
+    run;
+
+    proc sgplot data=work.citibike noborder noautolegend;
+    polygon x=Start_lat y=Start_lng id=Start_Station_name / fill outline tip=none lineattrs=(color=gray99) fillattrs=(color=cxe8edd5);
+    scatter x=Start_lat y=Start_lng /
+    markerattrs=(symbol=circlefilled size=13)
+    markerfillattrs=(color=yellow)
+    markeroutlineattrs=(color=purple);
+    xaxis display=none;
+    yaxis display=none;
+    run;
 
 ## f
 
-
-    
     proc sort data=work.citibike;
     by member_casual;
     run;
-
-    /* proc freq data=work.citibike order=freq nlevels; */
-    /*  tables Start_station_name / out=Customers; */
-    /*  by member_casual; */
-    /* run; */
 
     proc freq data=work.citibike order=freq;
     tables start_station_name / out=CustomersMem
@@ -132,19 +127,12 @@ run;
 
 
 
-
 ## g
-
 
 
     proc sort data=work.citibike;
     by member_casual;
     run;
-
-    /* proc freq data=work.citibike order=freq nlevels; */
-    /*  tables Start_station_name / out=Customers; */
-    /*  by member_casual; */
-    /* run; */
 
     proc freq data=work.citibike order=freq;
     tables start_station_name / out=CustomersCas
@@ -159,28 +147,29 @@ run;
 
 
     proc sort data=work.citibike;
-    by member_casual;
-    where (member_casual = 'member' );
-
-    /* proc freq data=work.citibike; */
-    /* tables EndDate / out=CusDate; */
-    /* tables EndTimes / out=CusTime; */
-    /* run; */
+	by member_casual;
+	where (member_casual = 'member' );
 
     proc freq data=work.citibike order=freq;
     tables EndDate / out=EndDate
-        plots=freqplot(twoway=stacked orient=horizontal);
-            by member_casual;
-            where (member_casual = 'member' );
+    plots=freqplot(twoway=stacked orient=horizontal);	
+    by member_casual;
+    where (member_casual = 'member' );
     run;
 
+    title 'Frequency for ending times';
     proc freq data=work.citibike order=freq;
     tables EndTimes / out=EndTimes
-        plots=freqplot(twoway=stacked orient=horizontal);
-            by member_casual;
-            where (member_casual = 'member' );
+    plots=freqplot(twoway=stacked orient=horizontal);
+    by member_casual;
+    where (member_casual = 'member' );
     run;
 
+    title 'Histogram for Ending Dates';
+    proc sgplot data=work.citibike;
+    histogram EndDate;
+    density EndDate;
+    run;
 
  
 ## i
