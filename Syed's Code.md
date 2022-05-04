@@ -92,6 +92,9 @@ run;
     proc sgplot data=work.citibike;
     scatter x=start_lat y=start_lng;
     run;
+    proc sgplot data=work.citibike;
+    scatter x=end_lat y=end_lng;
+    run;
 
     pattern c=black v=e r=62;
     proc gmap
@@ -111,6 +114,18 @@ run;
     xaxis display=none;
     yaxis display=none;
     run;
+
+
+    proc sgplot data=work.citibike noborder noautolegend;
+    polygon x=end_lat y=end_lng id=End_Station_name / fill outline tip=none lineattrs=(color=gray99) fillattrs=(color=cxe8edd5);
+    scatter x=end_lat y=end_lng /
+    markerattrs=(symbol=circlefilled size=13)
+    markerfillattrs=(color=yellow)
+    markeroutlineattrs=(color=purple);
+    xaxis display=none;
+    yaxis display=none;
+    run;
+
 
 ## f
 
