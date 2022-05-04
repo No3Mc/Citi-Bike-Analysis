@@ -1,11 +1,11 @@
 # Initial Querty
 
     PROC IMPORT OUT=WORK.Assignment 
-        DATAFILE="/home/u60748473/my_shared_file_links/u50396654/citibike-tripdata.xlsx"
-        DBMS=XLSX  REPLACE;
+    DATAFILE="/home/u60748473/my_shared_file_links/u50396654/citibike-tripdata.xlsx"
+    DBMS=XLSX  REPLACE;
     GETNAMES=YES;
-    
-    
+        
+        
     PROC SQL;
         DELETE FROM Assignment
         where (end_station_id = '' AND end_station_name ='');
@@ -27,6 +27,9 @@
     Format Starttime TIME8.;
     Format Enddate mmddyy10.;
     Format Endtime TIME8.;
+
+
+    run;
 
 
 # Main Query
@@ -89,6 +92,11 @@
     proc freq data=work.filetimings order=freq;
     tables DurationMin;
     run;
+
+## 3e
+
+
+
 
 
 ## 3f
