@@ -1,6 +1,6 @@
 # 2
 
-/* import */
+## /* import */
 
     PROC IMPORT OUT=WORK.import 
             DATAFILE="/home/u60766313/my_shared_file_links/u50396654/citibike-tripdata.xlsx"
@@ -9,7 +9,7 @@
 run;
 
 
-/* 2i */
+## /* 2i */
 
     PROC SQL;
     DELETE FROM import
@@ -18,7 +18,7 @@ run;
 
 
 
-/* 2ii */
+## /* 2ii */
 
     Data CitiBike;
     set import ;
