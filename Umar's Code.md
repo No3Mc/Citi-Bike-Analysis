@@ -69,10 +69,6 @@
     ;
     run;
     quit;
-    proc freq data=work.file order=freq;
-    tables end_station_id / out=CustomersCas
-        plots=freqplot(twoway=stacked orient=horizontal);
-    run;
 
 ## 3c
 
