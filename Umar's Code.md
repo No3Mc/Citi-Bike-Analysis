@@ -120,18 +120,31 @@
 
 ## 3h
 
+    Data File3hwork;
+    set File ;
+    if Starttime <'12:00't then Starttimes='Morning';
+    else if Starttime <'18:00't then Starttimes='Afternoon';
+    else Starttimes='Evening';
+
+    if Endtime <'12:00't then EndTimes='Morning';
+    else if Endtime <'18:00't then EndTimes='Afternoon';
+    else EndTimes='Evening';
+
+    run;
+
     title bold "3h";
-    proc sort data=work.file;
+    proc sort data=work.File3hwork;
     by member_casual;
     where (member_casual = 'member' );
 
-    proc freq data=work.file order=freq;
+    proc freq data=work.File3hwork order=freq;
     tables EndDate / out=MemberEDates;
             by member_casual;
             where (member_casual = 'member' );
+            
     run;
 
-    proc gchart data=work.file;
+    proc gchart data=work.File3hwork;
     pie EndDate / detail=EndDate
     detail_percent=best
     detail_value=none
@@ -142,13 +155,14 @@
     run;
     quit;
 
-    proc freq data=work.file order=freq;
+    proc freq data=work.File3hwork order=freq;
     tables EndTimes / out=MemberETimes;
             by member_casual;
             where (member_casual = 'member' );
     run;
 
-    proc gchart data=work.file;
+    proc gchart data=work.File3hwork;
+
     pie EndTimes / detail=EndTimes
     detail_percent=best
     detail_value=none
@@ -158,4 +172,3 @@
     ;
     run;
     quit;
-
