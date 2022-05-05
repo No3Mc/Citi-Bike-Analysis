@@ -90,17 +90,27 @@ run;
 ## e
 
         ods graphics / reset width=10in height=6in imagemap;
-    Title "Ploting the x= start lat and y = start lng using sgplot with scatter";
+
+    /* Ploting the x= start lat and y = start lng using sgplot with scatter */
+    Title "x= start lat and y = start lng";
+
     proc sgplot data=work.citibike;
         scatter x=start_lat y=start_lng;
     run;
+
     Title;
-    Title "Ploting the x= End lat and y = End lng using sgplot with scatter";
+
+    /* Ploting the x= End lat and y = End lng using sgplot with scatter */
+    Title "x= End lat and y = End ln";
+
     proc sgplot data=work.citibike;
         scatter x=end_lat y=end_lng;
     run;
+
     Title;
-    Title "Using gmap to create map of newyork and its counties";
+
+    /* Using gmap to create map of newyork and its counties */
+    Title "Map of newyork and its counties";
     pattern c=black v=e r=62;
 
     proc gmap data=maps.counties map=maps.counties;
@@ -108,8 +118,11 @@ run;
         choro county / nolegend;
         where state eq 36;
         run;
-    Title;
-    Title "Using sgplot to scatter start lat and start lng";
+        Title;
+
+        /* Using sgplot to scatter start lat and start lng */
+        Title "X= start lat and y = start lng";
+
     proc sgplot data=work.citibike noborder noautolegend;
         polygon x=Start_lat y=Start_lng id=Start_Station_name / fill outline tip=none 
             lineattrs=(color=gray99) fillattrs=(color=cxe8edd5);
@@ -119,8 +132,12 @@ run;
         xaxis display=none;
         yaxis display=none;
     run;
+
     Title;
-    Title "Using sgplot to scatter end lat and end lng";
+
+    /* Using sgplot to scatter end lat and end lng */
+    Title "x= end lat and y = end lng";
+
     proc sgplot data=work.citibike noborder noautolegend;
         polygon x=end_lat y=end_lng id=End_Station_name / fill outline tip=none 
             lineattrs=(color=gray99) fillattrs=(color=cxe8edd5);
@@ -130,8 +147,12 @@ run;
         xaxis display=none;
         yaxis display=none;
     run;
+
     Title;
-    Title "Ploting the x= End lat and y = end lng using statgraph with scatter";
+
+    /* Ploting the x= End lat and y = end lng using statgraph with scatter */
+    Title "x= End lat and y = end lng";
+
     proc template;
         define statgraph classscatter;
             begingraph;
@@ -143,11 +164,12 @@ run;
             endgraph;
         end;
     run;
+
     proc sgrender data=work.citibike template=classscatter;
     run;
+
     Title;
     ods graphics / reset;
-
 
 
 
