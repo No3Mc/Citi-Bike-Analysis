@@ -188,4 +188,11 @@ run;
 
  
 ## i
-    working on
+    ods graphics / reset width=10in height=6in imagemap;
+
+    proc freq data=work.citibike;
+        tables member_casual * start_station_name / plots(only)=freqplot 
+    (twoway=grouphorizontal);
+    run;
+
+    ods graphics off;
