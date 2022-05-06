@@ -2,47 +2,53 @@
 
 ## /* import */
 
-    PROC IMPORT OUT=WORK.import 
-            DATAFILE="/home/u60766313/my_shared_file_links/u50396654/citibike-tripdata.xlsx"
-            DBMS=XLSX  REPLACE;
+    /* importing the data to create a temp library file to work on */
+    PROC IMPORT OUT=WORK.import DATAFILE="/home/u60766313/my_shared_file_links/u50396654/citibike-tripdata.xlsx" 
+            DBMS=XLSX REPLACE;
         GETNAMES=YES;
-run;
+    run;
+
 
 
 ## /* 2i */
 
+    /* 2i doing an sql procedure step to delete end station id and end station name that are null */
     PROC SQL;
-    DELETE FROM import
-    where (end_station_id = '' AND end_station_name ='');
-    QUIT;
+        DELETE FROM import where (end_station_id='' AND end_station_name='');
+    QUIT;;
 
 
 
 ## /* 2ii */
 
+    /* 2ii formating data to have different columns for date and time */
     Data CitiBike;
-    set import ;
+        set import;
+        format started_at DATETIME16.;
+        format ended_at DATETIME16.;
+        Startdate=datepart(started_at);
+        Starttime=timepart(started_at);
+        Enddate=datepart(ended_at);
+        Endtime=timepart(ended_at);
+        Format Startdate mmddyy10.;
+        Format Starttime TIME8.;
+        Format Enddate mmddyy10.;
+        Format Endtime TIME8.;
 
-    format started_at DATETIME16.;
-    format ended_at DATETIME16.;
+        /* doing if statement to have a new column that displays evening morning and afternoon */
+        if Starttime <'12:00't then
+            Starttimes='Morning';
+        else if Starttime <'18:00't then
+            Starttimes='Afternoon';
+        else
+            Starttimes='Evening';
 
-    Startdate= datepart(started_at);
-    Starttime=timepart(started_at);
-    Enddate= datepart(ended_at);
-    Endtime=timepart(ended_at);
-
-    Format Startdate mmddyy10.;
-    Format Starttime TIME8.;
-    Format Enddate mmddyy10.;
-    Format Endtime TIME8.;
-
-    if Starttime <'12:00't then Starttimes='Morning';
-    else if Starttime <'18:00't then Starttimes='Afternoon';
-    else Starttimes='Evening';
-
-    if Endtime <'12:00't then EndTimes='Morning';
-    else if Endtime <'18:00't then EndTimes='Afternoon';
-    else EndTimes='Evening';
+        if Endtime <'12:00't then
+            EndTimes='Morning';
+        else if Endtime <'18:00't then
+            EndTimes='Afternoon';
+        else
+            EndTimes='Evening';
     run;
 
 
