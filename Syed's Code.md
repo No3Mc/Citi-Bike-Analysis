@@ -9,13 +9,12 @@
     run;
 
 
-
 ## /* 2i */
 
     /* 2i doing an sql procedure step to delete end station id and end station name that are null */
     PROC SQL;
         DELETE FROM import where (end_station_id='' AND end_station_name='');
-    QUIT;;
+    QUIT;
 
 
 
@@ -52,71 +51,106 @@
     run;
 
 
-
 # 3
 ## a
 
+    ods graphics / reset width=10in height=6in imagemap;
+    Title "3a";
+
+    /* Finding out the frequency in the data of start stations */
+    Title2 "Frequency for Start Station Name";
+
     proc freq data=work.citibike order=freq;
-    tables start_station_name / 
-        plots=freqplot(twoway=stacked orient=horizontal);
+        tables start_station_name / plots=freqplot(twoway=stacked orient=horizontal);
     run;
+
+    Title;
+    ods graphics / reset;
 
 
 ## b
 
+    ods graphics / reset width=10in height=6in imagemap;
+    Title "3b";
+
+    /* Finding out the frequency in the data of start stations */
+    Title2 "Frequency for end Station Name";
+
     proc freq data=work.citibike order=freq;
-    tables start_station_name / 
-        plots=freqplot(twoway=stacked orient=horizontal);
+        tables end_station_name / plots=freqplot(twoway=stacked orient=horizontal);
     run;
 
+    Title;
+    ods graphics / reset;
 
 ## c
 
 
+    ods graphics / reset width=10in height=6in imagemap;
+    Title "3c";
+
+    /* Finding out the frequency in the data of customers/member_casual */
+    Title2 "Frequency for Member_Casual";
+
     proc freq data=work.citibike order=freq;
-    tables member_casual / 
-        plots=freqplot(twoway=stacked orient=vertical);
+        tables member_casual / plots=freqplot(twoway=stacked orient=vertical);
     run;
+
+    Title;
+    ods graphics / reset;
 
 
 
 ## d
 
-    data work.citibiketime; 
-    set work.citibike; 
-    DurationMin = intck('minute',starttime,endtime); 
+Title "3d";
+
+    /* Finding out the difference with start time and end time in minutesa*/
+    data work.citibiketime;
+        set work.citibike;
+        DurationMin=intck('minute', starttime, endtime);
     run;
 
+    ods graphics / reset width=10in height=6in imagemap;
+
+    /* Finding out the frequency in the data of Duration between start and end time in minutes*/
+    Title2 "Frequency for DurationMin";
+
     proc freq data=work.citibiketime order=freq;
-    tables DurationMin / 
-        plots=freqplot(twoway=stacked orient=horizontal);
+        tables DurationMin / plots=freqplot(twoway=stacked orient=horizontal);
     run;
+
+    Title;
+    ods graphics / reset;
 
 
 ## e
 
-        ods graphics / reset width=10in height=6in imagemap;
+    ods graphics / reset width=10in height=6in imagemap;
+    Title "3e";
 
     /* Ploting the x= start lat and y = start lng using sgplot with scatter */
-    Title "x= start lat and y = start lng";
+    Title2 "x= start lat and y = start lng";
 
     proc sgplot data=work.citibike;
         scatter x=start_lat y=start_lng;
     run;
 
     Title;
+    Title "3e";
 
     /* Ploting the x= End lat and y = End lng using sgplot with scatter */
-    Title "x= End lat and y = End ln";
+    Title2 "x= End lat and y = End ln";
 
     proc sgplot data=work.citibike;
         scatter x=end_lat y=end_lng;
     run;
 
     Title;
+    Title "3e";
 
     /* Using gmap to create map of newyork and its counties */
-    Title "Map of newyork and its counties";
+    Title2 "Map of newyork and its counties";
     pattern c=black v=e r=62;
 
     proc gmap data=maps.counties map=maps.counties;
@@ -125,9 +159,10 @@
         where state eq 36;
         run;
         Title;
+        Title "3e";
 
         /* Using sgplot to scatter start lat and start lng */
-        Title "X= start lat and y = start lng";
+        Title2 "X= start lat and y = start lng";
 
     proc sgplot data=work.citibike noborder noautolegend;
         polygon x=Start_lat y=Start_lng id=Start_Station_name / fill outline tip=none 
@@ -140,9 +175,10 @@
     run;
 
     Title;
+    Title "3e";
 
     /* Using sgplot to scatter end lat and end lng */
-    Title "x= end lat and y = end lng";
+    Title2 "x= end lat and y = end lng";
 
     proc sgplot data=work.citibike noborder noautolegend;
         polygon x=end_lat y=end_lng id=End_Station_name / fill outline tip=none 
@@ -155,9 +191,10 @@
     run;
 
     Title;
+    Title "3e";
 
     /* Ploting the x= End lat and y = end lng using statgraph with scatter */
-    Title "x= End lat and y = end lng";
+    Title2 "x= End lat and y = end lng";
 
     proc template;
         define statgraph classscatter;
@@ -181,70 +218,108 @@
 
 ## f
 
+    ods graphics / reset width=10in height=6in imagemap;
+    Title "3f";
+
+    /* Sorting out the data to remove duplicate data in the dataset*/
     proc sort data=work.citibike;
-    by member_casual;
+        by member_casual;
     run;
+
+    /* Finding the Frequency for start_station_name by member_casual = member*/
+    Title2 "Frequency for start_station_name by member";
 
     proc freq data=work.citibike order=freq;
-    tables start_station_name / out=CustomersMem
-        plots=freqplot(twoway=stacked orient=horizontal);
-            by member_casual;
-            where (member_casual = 'member' );
+        tables start_station_name / out=CustomersMem plots=freqplot(twoway=stacked 
+            orient=horizontal);
+        by member_casual;
+        where (member_casual='member');
     run;
 
+    Title;
+    ods graphics / reset;
 
 
 ## g
 
+    ods graphics / reset width=10in height=6in imagemap;
+    Title "3g";
 
+    /* Sorting out the data to remove duplicate data in the dataset*/
     proc sort data=work.citibike;
-    by member_casual;
+        by member_casual;
     run;
+
+    /* Finding the Frequency for start_station_name by member_casual = Casual*/
+    Title2 "Frequency for start_station_name by Casual";
 
     proc freq data=work.citibike order=freq;
-    tables start_station_name / out=CustomersCas
-        plots=freqplot(twoway=stacked orient=horizontal);
-            by member_casual;
-            where (member_casual = 'casual' );
+        tables start_station_name / out=CustomersCas plots=freqplot(twoway=stacked 
+            orient=horizontal);
+        by member_casual;
+        where (member_casual='casual');
     run;
 
-
+    Title;
+    ods graphics / reset;
 
 ## h
 
 
+    Title "3h";
+    Title2 "Member Customers commonly return or dock bikes";
+
+    /* To enable coloring theme for evening, morning and afternoon */
+    proc format;
+        value $ EndingTimes "Evening"="RED" "Morning"="BLUE" "Afternoon"="SNOW";
+    run;
+
+    /* To eliminate duplicate records and have a new dataset accordingly */
     proc sort data=work.citibike;
-	by member_casual;
-	where (member_casual = 'member' );
+        by member_casual;
+        where (member_casual='member');
 
+        /* To find the frequency of the Enddate where member_casual = member  */
     proc freq data=work.citibike order=freq;
-    tables EndDate / out=EndDate
-    plots=freqplot(twoway=stacked orient=horizontal);	
-    by member_casual;
-    where (member_casual = 'member' );
+        tables EndDate / out=EndDate plots=freqplot(twoway=stacked orient=horizontal);
+        by member_casual;
+        where (member_casual='member');
     run;
 
-    title 'Frequency for ending times';
+    Title "3h";
+
+    /* To find the frequency of the Endtimes where member_casual = member  */
+    title2 'Frequency for ending times';
+
     proc freq data=work.citibike order=freq;
-    tables EndTimes / out=EndTimes
-    plots=freqplot(twoway=stacked orient=horizontal);
-    by member_casual;
-    where (member_casual = 'member' );
+        tables EndTimes / out=EndTimes plots=freqplot(twoway=stacked 
+            orient=horizontal);
+        by member_casual;
+        where (member_casual='member');
     run;
 
-    title 'Histogram for Ending Dates';
+    Title "3h";
+
+    /* To find the density of the Enddate where member_casual = member  */
+    title2 'Histogram for Ending Dates';
+
     proc sgplot data=work.citibike;
-    histogram EndDate;
-    density EndDate;
+        histogram EndDate;
+        density EndDate;
     run;
-
  
 ## i
+
     ods graphics / reset width=10in height=6in imagemap;
+    Title "3i";
+
+    /* Finding the Frequency for start_station_name by member_casual*/
+    Title2 "Difference of member_casual in start_station_name";
 
     proc freq data=work.citibike;
         tables member_casual * start_station_name / plots(only)=freqplot 
-    (twoway=grouphorizontal);
+    (twoway=grouphorizontal scale=percent type=Bar);
     run;
 
+    Title;
     ods graphics off;
