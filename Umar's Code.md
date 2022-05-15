@@ -45,8 +45,8 @@
         xaxis max=0.1 grid;
     run;
 
-ods graphics / reset;
-title;
+        ods graphics / reset;
+        title;
 ## 3b
     /* End Station ID */
     title bold "3b - End Station ID";
