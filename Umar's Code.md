@@ -1,4 +1,4 @@
-# Initial Querty
+# Initial Query
 
         /* Importing data from excel file */
     PROC IMPORT OUT=WORK.Assignment DATAFILE="/home/u60748473/my_shared_file_links/u50396654/citibike-tripdata.xlsx" 
